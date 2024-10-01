@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather - App  </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background: #222;
+        }
+        .card{
+            width: 90%;
+            max-width: 470px;
+            border-radius: 20px;
+            color: #fff;
+            background: linear-gradient(135deg,#005eff,#5b548a);
+            margin: 50px auto 0;
+            border-radius: 20px;
+            padding: 40px 30px 20px 20px;
+            margin-bottom: 4vh;
+            text-align: center;
+
+        }
+        .search{
+            margin: 3vh 3vh 3vh;
+           width: 90%;
+           display: flex;
+        }
+        .search input{
+            border: 0;
+            outline: 0;
+            background: #ebfffc;
+            color: #555;
+            padding: 10px 25px;
+            height: 60px;
+            border-radius: 30px;
+            flex: 1;
+            margin-right: 30px;
+            font-size: 18px;
+        }
+        .search button{
+            border: 0;
+            outline: 0;
+            background: #ebfffc;
+            border-radius: 50%;
+            width: 50%;
+            height: 60px;
+            cursor: pointer; 
+        }
+        .search button img{
+            width: 16px;
+        }
+        .weather img{
+            /* filter: brightness(0) saturate(100%) invert(0); */
+            /* background: #000; */
+            width: 50%;
+        }
+    
+        .weather h1{
+            font-size: 80px;
+            font-weight: 500;
+        }
+        .weather h2{
+            margin-bottom: 34px;
+            font-size: 60px;
+            font-weight: 400;
+            margin-top: 50px;
+        }
+        .details{
+            display:flex ;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            margin: top 50px; 
+        }
+        .col{
+            display: flex;
+            align-items: center;
+            text-align: left;
+
+        }
+        .col img{
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+        .humidity,.wind{
+             font-size: 28px;
+             margin-top: -6px;
+             margin-bottom: 12px;
+        }
+        .temp {
+            margin-top: 3vh;
+        }
+        .city{
+            margin-top: 3vh;        }
+
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter your City Name" spellcheck="false" id="in">
+            <button id="btn"><img src="Screenshot 2024-09-28 155947.png"></button>
+        </div>
+        <div class="weather">
+            <img id="weather-icon"  src="rain3.webp" class="weater-icon">
+            <h1 class="temp"> 22°C</h1>
+            <h2 class="city">Kanpur</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="" alt="" srcset="">
+                    <div>
+                        <p>Humidty</p>
+                        <p class="humidity">50%</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="" alt="" srcset="">
+                    <div>
+                        <p>wind Speed</p>
+                        <p class="wind ">5 km</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
